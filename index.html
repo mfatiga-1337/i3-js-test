@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <h1>Quiz</h1>
+            <p>Give it a shot! Solve the quiz.</p>
+            <div id="nav-buttons" style="display: flex; flex-direction: column;"></div>
+        </div>
+        
+        <div class="quiz-container">
+            <div id="quiz"></div>
+            <div class="button-container">
+                <button id="prev-button" style="display: none;">Previous</button>
+                <button id="next-button">Next</button>
+                <button id="show-results-button" style="display: none;" disabled>Show Results</button>
+            </div>
+            <div id="results"></div>
+            <div id="warning-message"></div>
+        </div>
+    </div>
+    
+    <script src="js/quiz.js"></script>
+</body>
+</html>
