@@ -1,8 +1,8 @@
 let questions = [
-    { text: "Pitanje 1" },
-    { text: "Pitanje 2" },
-    { text: "Pitanje 3" },
-    { text: "Pitanje 4" }
+    { text: "Question 1" },
+    { text: "Question 2" },
+    { text: "Question 3" },
+    { text: "Question 4" }
 ];
 
 let currentQuestionIndex = 0;
@@ -187,7 +187,7 @@ function createNavButtons() {
     navContainer.innerHTML = ''; 
     for (let i = 0; i < questions.length; i++) {
         let navButton = document.createElement('button');
-        navButton.textContent = 'Pitanje ' + (i + 1);
+        navButton.textContent = questions[i].text;
         navButton.className = 'nav-button';
 
         navButton.addEventListener('click', function() {
